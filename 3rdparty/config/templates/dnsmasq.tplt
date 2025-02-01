@@ -1,0 +1,19 @@
+#Set the wifi interface
+interface={{interface}}
+bind-interfaces
+
+#Set the ip range that can be given to clients
+dhcp-range={{dhcp_range}}
+
+#Set the gateway IP address
+dhcp-option=3,{{listen_address}}
+
+#Set dns server address
+dhcp-option=6,{{listen_address}}
+
+server={{server}}
+
+listen-address={{listen_address}}
+
+log-queries
+log-facility={{log_facility}}

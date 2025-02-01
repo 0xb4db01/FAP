@@ -1,0 +1,35 @@
+{
+     "iptables": {
+        "cmd": "iptables-legacy"
+     },
+     "dnsmasq": {
+        "config_file_tplt": "/root/fap/3rdparty/config/templates/dnsmasq.tplt",
+        "log_facility": "/root/log/dnsmasq.log",
+        "dhcp_range": "192.168.50.10,192.168.50.100,8h",
+        "server": "8.8.8.8",
+        "listen_address": "192.168.50.1",
+	"pid_file": "/root/run/dnsmasq.pid"
+     },
+     "hostapd": {
+        "config_file_tplt": "/root/fap/3rdparty/config/templates/hostapd.tplt",
+        "log_facility": "/root/log/hostapd.log",
+        "ssid": "FAP-WIFI",
+        "channel": "11",
+	"pid_file": "/root/run/hostapd.pid"
+     },
+    "fap": {
+        "dnsmasq_cfg": "/root/fap/3rdparty/config/dnsmasq.conf",
+        "hostapd_cfg": "/root/fap/3rdparty/config/hostapd.conf",
+        "ip": "192.168.50.1",
+        "netmask": "255.255.255.0",
+        "network": "192.168.50.0/24",
+        "i_interface": "wlan0",
+        "o_interface": "eth0",
+        "log": "/root/log"
+    },
+    "flaskaptive": {
+        "port": 80,
+        "template_folder": "/root/fap/flaskaptive/templates/FREEWIFIZ",
+        "static_folder": "/root/fap/flaskaptive/static/FREEWIFIZ"
+    }
+}

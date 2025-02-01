@@ -1,0 +1,6 @@
+interface={{interface}}
+driver=nl80211
+ssid={{ssid}}
+hw_mode=g
+channel=6
+auth_algs=1

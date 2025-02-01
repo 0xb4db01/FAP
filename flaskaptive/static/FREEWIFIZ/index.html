@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In | Ludiflex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-box">
+		<div class="google-logo" width="74" height="24">
+			<img src="freewifiz.png">
+		</div>
+        <div class="login-header">
+            <header>Access the Internet</header>
+            <p>Use your Free WiFizZ account</p>
+        </div>
+		<div class="input-area" id="input-area">
+			<div class="input-box">
+				<input type="text" class="input-field" id="email" autocomplete="off" required>
+				<label for="email">Username</label>
+			</div>
+			<div class="input-box">
+				<input type="password" class="input-field" id="password" autocomplete="off" required>
+				<label for="password">Password</label>
+			</div>
+		</div>
+        <div class="input-box">
+            <input type="submit" style="margin-top: 40px;" class="input-submit" value="Avanti" onclick="Login.submit_btn()">
+        </div>
+		<div class="input-box" style="display: flex;">
+            <input type="submit" style="margin-top: 10px;margin-right: 5px;background: #1a73e8;" class="input-submit" value="Log in with Google" onclick="window.location.href = 'google/index.html'">
+			<input type="submit" style="margin-top: 10px;margin-left: 5px;background: #4267B2;" class="input-submit" value="Log in with Facebook" onclick="window.location.href = 'facebook/index.html'">
+        </div>
+		
+    </div>
+	<script src="javascript.js"></script>
+</body>
+</html>
