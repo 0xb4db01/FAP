@@ -90,3 +90,16 @@ You can choose to modify the code there to fit your needs, or to create a new ca
 At the moment I'm not gonna document the way to do this, look at `flaskaptive/__init__.py` and good luck. Take also a look at the HTML and JS stuff if you just want to add other login platforms or just modify the default landing page, which is stupid on purpose.
 
 My suggestion for this release is to modify the actual code, as it's in an `__init__.py` file. So use what's provided if you want to add routes and also for the web part, if you want to change the landing page look use the FREEWIFIZ templates and static folders.
+
+# The Holy Credentials Harvesting
+
+Once somebody falls for the thing, you should find credentials in `/root/log/flaskaptive`, provided you didn't modify the log directory in the configuration file.
+
+Grep for `credentials` keyword in the log file, you should find stuff such as:
+
+```
+2025-02-01 10:06:55,683 - flaskaptive - INFO - DEFAULT page login credentials:aaa/aaa
+2025-02-01 11:42:41,730 - flaskaptive - INFO - FACEBOOK login credentials: A/a
+```
+
+FAP is kind enough to tell you which login form have been used.
