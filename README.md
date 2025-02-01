@@ -93,7 +93,7 @@ My suggestion for this release is to modify the actual code, as it's in an `__in
 
 # The Holy Credentials Harvesting
 
-Once somebody falls for the thing, you should find credentials in `/root/log/flaskaptive`, provided you didn't modify the log directory in the configuration file.
+Once somebody falls for the thing, you should find credentials in `/root/log/flaskaptive.log`, provided you didn't modify the log directory in the configuration file.
 
 Grep for `credentials` keyword in the log file, you should find stuff such as:
 
